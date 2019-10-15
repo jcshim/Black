@@ -39,7 +39,6 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags);
-	virtual BOOL DestroyWindow();
 };
 
 #ifndef _DEBUG  // BlackView.cpp의 디버그 버전

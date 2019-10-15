@@ -59,7 +59,7 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	//  Window 클래스 또는 스타일을 수정합니다.
 	int x = GetSystemMetrics(SM_CXSCREEN);
 	int y = GetSystemMetrics(SM_CYSCREEN);
-	cs.style = WS_POPUP;//WS_OVERLAPPED | WS_CAPTION | FWS_ADDTOTITLE
+	cs.style = WS_POPUP;// | WS_OVERLAPPED | WS_CAPTION | FWS_ADDTOTITLE;
 	cs.x = -2;
 	cs.y = -2;
 	cs.cx = x+4;

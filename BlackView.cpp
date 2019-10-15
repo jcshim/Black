@@ -95,12 +95,3 @@ void CBlackView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	AfxGetMainWnd()->PostMessageW(WM_CLOSE);
 	CView::OnKeyDown(nChar, nRepCnt, nFlags);
 }
-
-
-
-BOOL CBlackView::DestroyWindow()
-{
-	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
-
-	return CView::DestroyWindow();
-}

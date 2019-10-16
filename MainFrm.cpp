@@ -35,7 +35,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
 	if (CFrameWnd::OnCreate(lpCreateStruct) == -1)
 		return -1;
-	/*
+	/* 툴바를 뜨지 않도록 막기
 	if (!m_wndToolBar.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC) ||
 		!m_wndToolBar.LoadToolBar(IDR_MAINFRAME))
 	{
@@ -57,10 +57,10 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 		return FALSE;
 	// TODO: CREATESTRUCT cs를 수정하여 여기에서
 	//  Window 클래스 또는 스타일을 수정합니다.
-	int x = GetSystemMetrics(SM_CXSCREEN);
-	int y = GetSystemMetrics(SM_CYSCREEN);
+	int x = GetSystemMetrics(SM_CXSCREEN);  // 스크린 X 크기
+	int y = GetSystemMetrics(SM_CYSCREEN);  // 스크린 Y 크기
 	cs.style = WS_POPUP;// | WS_OVERLAPPED | WS_CAPTION | FWS_ADDTOTITLE;
-	cs.x = -2;
+	cs.x = -2; // 테두리까지 포함
 	cs.y = -2;
 	cs.cx = x+4;
 	cs.cy = y+4;

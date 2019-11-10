@@ -19,7 +19,8 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 }
 -----
 # BlackView.cpp
-void CBlackView::OnDraw(CDC* pDC){
+void CBlackView::OnDraw(CDC* pDC)
+{
 	CBlackDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
@@ -32,11 +33,20 @@ void CBlackView::OnDraw(CDC* pDC){
 	pDC->Rectangle(r);  // 사각형 그리기
 	ShowCursor(false);  // 커서 감추기
 }
-void CBlackView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags){
+
+void CBlackView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
 	AfxGetMainWnd()->PostMessageW(WM_CLOSE); // 윈도우 닫기
 	CView::OnKeyDown(nChar, nRepCnt, nFlags);
 }
-void CBlackView::OnLButtonDown(UINT nFlags, CPoint point){
+
+
+void CBlackView::OnLButtonDown(UINT nFlags, CPoint point)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
 	AfxGetMainWnd()->PostMessageW(WM_CLOSE); // 윈도우 닫기
 	CView::OnLButtonDown(nFlags, point);
 }
+
+

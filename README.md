@@ -41,3 +41,4 @@ void CBlackView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	AfxGetMainWnd()->PostMessageW(WM_CLOSE); // 윈도우 닫기
 	CView::OnLButtonDown(nFlags, point);
 }
+   

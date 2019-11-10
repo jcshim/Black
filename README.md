@@ -18,7 +18,9 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	return TRUE;
 }
 -----
+
 # BlackView.cpp
+
 void CBlackView::OnDraw(CDC* pDC)
 {
 	CBlackDoc* pDoc = GetDocument();
@@ -48,5 +50,6 @@ void CBlackView::OnLButtonDown(UINT nFlags, CPoint point)
 	AfxGetMainWnd()->PostMessageW(WM_CLOSE); // 윈도우 닫기
 	CView::OnLButtonDown(nFlags, point);
 }
+
 
 

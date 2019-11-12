@@ -1,7 +1,3 @@
-
-BOOL 
-CMainFrame::PreCreateWindow
-(CREATESTRUCT& cs)
 # MainFrm.cpp
 BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs){
 if( !CFrameWnd::PreCreateWindow(cs) )

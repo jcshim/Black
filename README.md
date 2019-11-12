@@ -1,5 +1,5 @@
 # MainFrm.cpp
-PreCreateWindow() 함수는 스크린 크기를 나타냄.
+### PreCreateWindow() 함수는 스크린 크기를 나타냄.
 
 int x = GetSystemMetrics(SM_CXSCREEN);  // 스크린 X 크기
 
@@ -26,7 +26,7 @@ if (cs.hMenu != NULL) {
 
 # BlackView.cpp
 
-OnDraw() 함수
+### OnDraw() 함수
 
 CBrush b;
 
@@ -43,10 +43,10 @@ pDC->Rectangle(r);  // 사각형 그리기
 ShowCursor(false);  // 커서 감추기
 
 
-OnKeyDown() 함수
+### OnKeyDown() 함수
 
   AfxGetMainWnd()->PostMessageW(WM_CLOSE); // 윈도우 닫기
 
-OnLButtonDown() 함수
+### OnLButtonDown() 함수
 
   AfxGetMainWnd()->PostMessageW(WM_CLOSE); // 메시지 보내기

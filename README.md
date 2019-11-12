@@ -1,10 +1,12 @@
-# 화면을 검게 만들자
-## MainFrm.cpp
 
-BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs){	
+BOOL 
+CMainFrame::PreCreateWindow
+(CREATESTRUCT& cs)
+
+{
 
 	if( !CFrameWnd::PreCreateWindow(cs) )
-	
+
 		return FALSE;
 		
 	int x = GetSystemMetrics(SM_CXSCREEN);  // 스크린 X 크기
@@ -31,7 +33,4 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs){
 	
 	return TRUE;
 	
-}       
-
-                                                             
-
+}  
